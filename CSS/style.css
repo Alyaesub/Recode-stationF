@@ -1,0 +1,16 @@
+body {
+    background-color: cadetblue;
+}
+
+.logo {
+    
+}
+
+.header {
+    background-color: gray;
+    display: flex;
+}
+
+.liste-menu {
+    display: flex;
+}
