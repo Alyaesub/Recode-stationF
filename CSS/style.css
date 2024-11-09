@@ -1,16 +1,42 @@
-body {
-    background-color: cadetblue;
-}
+
+/* Start : css Header */
 
 .logo {
-    
+    width: 125px;
+    height: 25px;
 }
 
 .header {
     background-color: gray;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .liste-menu {
     display: flex;
+    list-style: none;
+    column-gap: 20px;
+}
+
+.lien-nav {
+    text-transform: uppercase;
+}
+
+.bouton {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+/* Start: css cover*/
+
+.cover {
+    display: flex;
+}
+
+.image-office {
+    width: 55%;
+    flex-shrink: 0;
 }
