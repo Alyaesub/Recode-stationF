@@ -1,3 +1,6 @@
+
+
+/*Style global*/
 * { 
     font-family: "Cabin", sans-serif;
     font-optical-sizing: auto;
@@ -6,6 +9,34 @@
     font-variation-settings:"wdth" 100;
 }
 
+.flux {
+    margin-left: 75px;
+    margin-right: 75PX;
+}    
+
+    @media (max-width: 500px) {
+        .flux {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    }
+
+
+/*Reset*/
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
 
 /* Start : css Header */
 
@@ -15,38 +46,55 @@
 }
 
 .header {
-    background-color: gray;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .liste-menu {
     display: flex;
-    list-style: none;
-    column-gap: 20px;
+    column-gap: 40px;
+    align-items: center;
 }
 
 .lien-nav {
     text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
 }
+
 
 .bouton {
     background-color: black;
     color: white;
-    padding: 5px 10px;
-    border-radius: 20px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: 500;
 }
+
+
 
 /* Start: css cover*/
 
 .cover {
     display: flex;
+    align-items: center;
+}
+
+@media (max-width: 500px) {
+    .cover {
+        flex-direction:column;
+    }
 }
 
 .image-office {
     width: 55%;
-    flex-shrink: 0;
+    flex-shrink: 0; 
+    height: 250px;
+    object-fit: cover;
+    object-position: bottom;
 }
 
 .fleche-icon {
@@ -57,4 +105,17 @@
     display: flex;
     justify-content: center;
     justify-items: center;
+}
+
+.cover-text {
+    padding-right: 100px;
+}
+
+.cover-title {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.cover-introduction {
+    margin-bottom: 3Opx;
 }
