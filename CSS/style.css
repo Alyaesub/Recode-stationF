@@ -1,3 +1,11 @@
+* { 
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
 
 /* Start : css Header */
 
@@ -39,4 +47,14 @@
 .image-office {
     width: 55%;
     flex-shrink: 0;
+}
+
+.fleche-icon {
+    background-color: black;
+    width:50px;
+    height:50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
 }
