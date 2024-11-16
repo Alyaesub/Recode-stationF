@@ -14,13 +14,26 @@
     margin-right: 75PX;
 }    
 
-    @media (max-width: 500px) {
-        .flux {
-            margin-left: 5px;
-            margin-right: 5px;
-        }
+@media (max-width: 500px) {
+    .flux {
+         margin-left: 5px;
+         margin-right: 5px;
     }
+}
 
+.title-2 {
+     font-size: 40px;
+    margin-bottom: 20px; 
+}
+
+.button {
+    display: inline-block;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color:black;
+}
 
 /*Reset*/
 
@@ -63,6 +76,10 @@ ul, ol {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 400;
+}
+
+.fleche-icon {
+    margin-top: 50px;
 }
 
 
@@ -118,4 +135,47 @@ ul, ol {
 
 .cover-introduction {
     margin-bottom: 3Opx;
+}
+
+/*Start: css Programmes*/
+
+.programmes {
+    background-color: #202020;
+    margin-top: 75px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.programmes .flux {
+    display: flex;
+    gap: 50px;
+}
+
+.programmes .container-texts {
+    color: white;
+    line-height: 1,5;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.programmes .title-2 {
+    width: 75%;
+    line-height: 1,75;
+}
+
+.programmes p {
+    line-height: 24px;
+}
+
+.programmes .container-texts .button {
+    margin-top: 20px;
+}
+
+.programmes .container-texts p {
+    flex-grow: 1;
+}
+
+.programmes .container-images {
+    background-color: green;
 }
