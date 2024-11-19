@@ -24,7 +24,7 @@ body {
     margin-right: 85PX;
 }    
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
     .flux {
             margin-left: 5px;
             margin-right: 5px;
@@ -102,6 +102,37 @@ html {
     font-weight: 400;
 }
 
+@media (max-width: 768px) {
+    .liste-menu {
+        display: none;
+    }
+    .bouton {
+        display: none;
+    }
+}
+
+.menu-burger {
+    width: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-burger span {
+    background:black;
+    height: 3px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    .menu-burger {
+        display: none;
+    }
+    
+}
+
 .lien-nav:hover {
     text-decoration: underline;
 }
@@ -136,11 +167,15 @@ html {
     align-items: center;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
     .cover {
         flex-direction:column;
     }
+    .image-office {
+        display: none;
+    }
 }
+
 
 .image-office {
     width: 40%;
@@ -260,6 +295,12 @@ html {
     box-sizing: border-box;
 }
 
+@media (max-width: 768px) {
+    .container-images li {
+            display: none;
+    }
+}
+
 .programmes .container-images li img {
     width: 100%;
     height: 100%;
@@ -312,6 +353,11 @@ html {
     font-size: 20px;
 }
 
+@media (max-width: 768px) {
+    .image-LD{
+            display: none;
+    }
+}
 
 
 /*End style landing zone*/
