@@ -1,4 +1,10 @@
 
+/*Importation police specifique*/
+
+@import url(https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+
+
+/*Fin des impor*/
 
 /*Style global*/
 * { 
@@ -9,30 +15,43 @@
     font-variation-settings:"wdth" 100;
 }
 
+body {
+    background-color: rgb(245, 245, 236) ;
+}
+
 .flux {
-    margin-left: 75px;
-    margin-right: 75PX;
+    margin-left: 85px;
+    margin-right: 85PX;
 }    
 
 @media (max-width: 500px) {
     .flux {
-         margin-left: 5px;
-         margin-right: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
     }
 }
 
 .title-2 {
-     font-size: 40px;
-    margin-bottom: 20px; 
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: Barlow Condensed, sans-serif;
 }
 
 .button {
     display: inline-block;
     text-transform: uppercase;
-    color: white;
+    color:black;
     border-radius: 20px;
     padding: 10px 20px;
-    background-color:black;
+}
+
+.button-white {
+    background-color: white;
+    transition:background-color 0.25s;
+}
+
+.button-white:hover {
+    background-color: gray;
 }
 
 /*Reset*/
@@ -51,9 +70,14 @@ ul, ol {
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Start : css Header */
 
 .logo {
+    margin-left: 90px;
     width: 125px;
     height: 25px;
 }
@@ -78,24 +102,36 @@ ul, ol {
     font-weight: 400;
 }
 
+.lien-nav:hover {
+    text-decoration: underline;
+}
+
 .fleche-icon {
     margin-top: 50px;
 }
 
 
 .bouton {
-    background-color: black;
+    background-color:black;
     color: white;
     padding: 15px 30px;
     border-radius: 30px;
     font-weight: 500;
 }
 
+.selection-langue {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .25rem 1rem;
+    cursor: pointer;
+}
 
 
 /* Start: css cover*/
 
 .cover {
+    margin-top: 150px;
     display: flex;
     align-items: center;
 }
@@ -107,12 +143,10 @@ ul, ol {
 }
 
 .image-office {
-    width: 55%;
-    flex-shrink: 0; 
-    height: 250px;
-    object-fit: cover;
-    object-position: bottom;
+    width: 40%;
+    margin-right: 50px;
 }
+
 
 .fleche-icon {
     background-color: black;
@@ -126,22 +160,44 @@ ul, ol {
 
 .cover-text {
     padding-right: 100px;
+    margin-left: 80px;
 }
 
 .cover-title {
-    font-size: 50px;
+    width: 70%;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 70px;
     margin-bottom: 20px;
+    font-family: Barlow Condensed, sans-serif;
 }
 
 .cover-introduction {
+    margin-top: 50px;
     margin-bottom: 3Opx;
+    line-height: 24px;
+    color: rgb(117, 114, 114);
+    font-size: x-large;
+}
+
+.background-degrade {
+    background-image: conic-gradient(from -47deg at 48.86% 48.52%, #86efac 0deg, #fed7aa 50.625deg, #f1ece9 107.91542887687683deg, #f472b6 156.2752068042755deg, #a78bfa 252.34398365020752deg, #f1ece9 282.4831509590149deg, #86efac);
+    display: block;
+    width: 60%;
+    height: 70%;
+    position: absolute;
+    z-index: -1;
+    margin-left: 50%;
+    margin-top: 100px;
+    margin-bottom:60px;
+    filter: blur(24px);
 }
 
 /*Start: css Programmes*/
 
 .programmes {
-    background-color: #202020;
-    margin-top: 75px;
+    background-color: #131212;
+    margin-top: 150px;
     padding-top: 75px;
     padding-bottom: 75px;
 }
@@ -160,16 +216,29 @@ ul, ol {
 }
 
 .programmes .title-2 {
-    width: 75%;
+    width: 50%;
     line-height: 1,75;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    font-family: Barlow Condensed, sans-serif;
+    
 }
 
 .programmes p {
-    line-height: 24px;
+    line-height: 32px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 70px;
 }
 
 .programmes .container-texts .button {
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-left: 75px;
+    
 }
 
 .programmes .container-texts p {
@@ -177,5 +246,73 @@ ul, ol {
 }
 
 .programmes .container-images {
-    background-color: green;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
 }
+
+.programmes .container-images li {
+    background-color: white;
+    border-radius: 10px;
+    width: calc(40% - 25px /2);
+    height: 130px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.programmes .container-images li img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/*Star style landing zone*/
+
+.landingzone {
+    background: linear-gradient(180deg, #131212 0% 50%, white 50% 10%)
+}    
+
+.landingzone .landingzone-contenus {
+    background-color:rgb(100, 99, 99);
+    border-radius: 10px;
+    display: flex;
+    padding: 75px 50px 50px;
+}
+
+.landingzone img {
+    width: 40%;
+    padding-right: 50px;
+}
+
+.landingzone .text-landingzone {
+    width:60%;
+    color: white;
+    line-height: 1,5;
+}    
+
+.landingzone .bouton-landingzone {
+    margin-top: 120px;
+    margin-left: 80px;
+    font-weight: 500;
+}
+
+.landingzone .text-landingzone h2 {
+    margin-left: 80px;
+    line-height: 1,75;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 50px;
+    font-family: Barlow Condensed, sans-serif;
+}
+
+.landingzone .text-landingzone p {
+    margin-top: 50px;
+    margin-left: 80px;
+    line-height: 32px;
+    font-size: 20px;
+}
+
+
+
+/*End style landing zone*/
+
